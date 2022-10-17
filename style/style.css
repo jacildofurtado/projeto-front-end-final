@@ -199,6 +199,34 @@ section.cta a{
     max-width: 100%;
 }
 
+section.depoimentos{
+    background-color: #FBFCFE;
+    padding: 40px 0;
+
+}
+
+section.depoimentos > h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.container-slider{
+    overflow: hidden;
+}
+
+.container-slider-single{
+    float: left;
+    background-color: red;
+    padding: 10px;
+}
+
+.slick-slide{
+    margin-left: 27px;
+}
+
+.slick-list{
+    margin-left: -27px;
+}
 @media screen and (max-width: 768px){
     .diferenciais{
         flex-wrap: wrap;
