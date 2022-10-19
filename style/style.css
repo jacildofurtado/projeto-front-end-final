@@ -7,20 +7,20 @@
     font-family: 'Raleway', sans-serif;
 }
 
-main{
-    background-image: url('../images/bg.svg');
-    background-position: center;
-    background-size: cover;
-    min-height: 700px;
-    padding: 20px 0 80px 0;
-}
-
 .center{
     display: flex;
     max-width: 1100px;
     padding: 0 2%;
     margin: 0 auto;
     flex-wrap: wrap;
+}
+
+main{
+    background-image: url('../images/bg.svg');
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+    padding: 20px 0 80px 0;
 }
 
 .menu{
@@ -70,6 +70,9 @@ main{
     font-size: 50px;
 }
 
+.mockup img{
+    max-width: 100%;
+}
 
 section.marcas{
     padding: 100px 0;
@@ -340,6 +343,11 @@ footer{
     padding: 8px 0;
 }
 
+.menu-mobile{
+    display: none;
+}
+
+
 .items-menu-mobile{
     display: none;
     width: 50%;
@@ -360,19 +368,25 @@ footer{
     }
 
     .menu-mobile{
+        display: block;
         opacity: 0;
-        transition: 1s;
         position: absolute;
         left: 0;
         top: 65px;
         background-color: white;
         width: 100%;
-        padding: 15px 0;
+        padding: 0px 0;
         text-align: center;
     }
 
     .show{
         opacity: 1;
+        transition: 0.5s;
+    }
+
+    .hide{
+        opacity: 0;
+        transition: 0.5s;
     }
 
     .menu-mobile a{
@@ -382,7 +396,7 @@ footer{
         color: rgb(40,40,40);
         text-decoration: none;
         font-weight: bold;
-        border-bottom: 1px solid rgb(40,40,40);
+        border: 1px solid rgb(40,40,40);
         padding: 8px 0;
     }
 
